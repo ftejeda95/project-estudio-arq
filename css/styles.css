@@ -12,9 +12,10 @@ body{
 
 }
 /* NAVEGADOR*/
+/*
 body header nav{   
     color: rgb(201, 197, 180);
-    /* background-color: #220901; */
+    /* background-color: #220901; 
     background-size: 10;
     display: flex;
     flex-flow: row nowrap; 
@@ -35,7 +36,7 @@ body header nav{
 .navBar:hover{
     opacity: 1;
 }
-/*LOGO*/
+/*LOGO
 
 .logo{
     width: 10%;
@@ -57,7 +58,7 @@ body header nav{
 }
 
 
-/* BARRA NAVEGACION*/
+/* BARRA NAVEGACION
 .navBarFlex{
     display: flex;
     justify-content: center;
@@ -88,14 +89,14 @@ body header nav{
 #navBarFLex__ul__li__a{
     text-decoration: none;
     border-style:inset; 
-    /* border-color: #BC3908; */
+    /* border-color: #BC3908; 
     color: rgb(255, 255, 255);
     font-size: 16px;
     border-radius: 5%;
     text-shadow: 0px 0px 10px #F6AA1C;
     align-items: center;
     padding: 5px 15px;
-    /* background-color: #621708; */
+    /* background-color: #621708; 
     box-shadow:1px 1px 1px #070707;
     transition: box-shadow 1s, font-size 1s;
     background-image: url(../assets/Inicio/muro\ ladrillo.jpg);
@@ -116,7 +117,7 @@ body header nav{
     display:none
 }
 
-/* BARRA NAVEGACION REDES SOCIALES*/
+/* BARRA NAVEGACION REDES SOCIALES
 .navBarFlex__Redes{
     width: 10%;
     display: flex;
@@ -145,7 +146,8 @@ body header nav{
 
 }
 
-/*SECCIONES- IMAGEN INICO*/
+*/
+/*SECCIONES- IMAGEN INICO
 
 .imagenInicio{
     width: 100%;
@@ -179,7 +181,7 @@ body header nav{
     
 }
 
-/*SECCIONES- IMAGENES SUSTENTABLES*/
+/*SECCIONES- IMAGENES SUSTENTABLES
 
 
 .imagenSustentable{
@@ -255,7 +257,7 @@ div .home__subtittle h3{
 }
 
 
-/* SECCIONES-TEXTO*/
+/* SECCIONES-TEXTO
 .ParrafoDescriptivo__p {
     margin-top: 25px;
     padding: 16px 0;
@@ -271,7 +273,7 @@ div .home__subtittle h3{
 }
 
 
-/*VOLVER*/
+/*VOLVER
 
 .volver{
     text-align: center;
@@ -293,14 +295,14 @@ transition: background-color 2s, border-color 2s, box-shadow 2s;
     border-color: #F6AA1C;
     box-shadow:1px 1px 25px rgb(255, 255, 255); 
 }
-/* FOOTER*/
+/* FOOTER
 .footer{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-content:center ;
     align-items: center;
     color: rgb(201, 197, 180);
-    /* background-color: #220901; */
+    /* background-color: #220901; 
     background-size: 10;
     box-shadow: 0px -4px 30px #acacac;
     background-image: url(../assets/Inicio/fondo\ piedra.jpg);
@@ -356,7 +358,7 @@ transition: background-color 2s, border-color 2s, box-shadow 2s;
     justify-content: center;
 }
 
-/* FORMATO PROYECTO--TERMINACIONES*/
+/* FORMATO PROYECTO--TERMINACIONES
 
 .proyecto__terminaciones {
     max-width: 100%;
@@ -391,7 +393,7 @@ transition: background-color 2s, border-color 2s, box-shadow 2s;
     
 }
 
-/* FORMATO PROYECTO--POSADA*/
+/* FORMATO PROYECTO--POSADA
 .proyecto__posada{
     max-width: 100%;
     height: 100%;
@@ -426,7 +428,7 @@ transition: background-color 2s, border-color 2s, box-shadow 2s;
 
 
 }
-/* FORMATO PROYECTO--CASA ROSA*/
+/* FORMATO PROYECTO--CASA ROSA
 
 .proyecto__rosa{
     
@@ -465,7 +467,7 @@ transition: background-color 2s, border-color 2s, box-shadow 2s;
 #proyecto__rosa__items--amplio3 {
     grid-area: 4/1/4/3;
 }
-/* FORMATO PROYECTO--CASA MADERA*/
+/* FORMATO PROYECTO--CASA MADERA
 .proyecto__madera{
     height: 100%;
     display: grid;
@@ -493,7 +495,7 @@ transition: background-color 2s, border-color 2s, box-shadow 2s;
     box-shadow: 0px -4px 10px #BC3908;
     
 }
-/* FORMATO PROYECTO--CASA MADERA*/
+/* FORMATO PROYECTO--CASA MADERA
 .proyecto__escaleras{
     max-width: 100%;
     height: 100%;
@@ -525,7 +527,7 @@ transition: background-color 2s, border-color 2s, box-shadow 2s;
     grid-area: 2/1/2/3;
 }
 
-/* FORMATO PROYECTO--CASA MADERA*/
+/* FORMATO PROYECTO--CASA MADERA
 
 .proyecto__maqueta {
     display: block;
@@ -551,7 +553,7 @@ transition: background-color 2s, border-color 2s, box-shadow 2s;
     box-shadow: 0px -4px 10px #BC3908;
 }
 
-/*FORMATO CONTACO*/
+/*FORMATO CONTACO
 .contacto__tittle{
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 10px #F6AA1C;
@@ -646,7 +648,7 @@ transition: background-color 2s, border-color 2s, box-shadow 2s;
     box-shadow: 0px -4px 10px #BC3908;
 } 
 
-/*FORMATO ESTUDIO*/
+/*FORMATO ESTUDIO
 .section__estudio h3 {
     color: #F6AA1C;
     text-shadow: 10px 10px 5px #000000;
@@ -758,7 +760,7 @@ place-self: center;
     opacity: 0.6;
 }
 
-/*FORMATO ESTILO SUSTENTABLE*/
+/*FORMATO ESTILO SUSTENTABLE
 .sustentable__section{ 
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -810,7 +812,7 @@ place-self: center;
     margin: 50px 0;
 
 }
-/*MEDIA SQUERIES*MOBILE LAST INICIO*/
+/*MEDIA SQUERIES*MOBILE LAST INICIO
 @media (min-width: 320px) and (max-width: 720px)  {
 
 .navBarFlex{
@@ -865,6 +867,7 @@ body header nav{
 .imagenInicio img{
     margin: 7px  0px;
 }
+
 footer {
     height: 50px;
     display: grid;
@@ -1011,7 +1014,7 @@ footer {
     height: 75px;
 }}
 
-/*MEDIA SQUERIES *MOBILE LAST ESTUDIO*/
+/*MEDIA SQUERIES *MOBILE LAST ESTUDIO
 @media (min-width: 610px) and (max-width:1220px){
     body {
         max-width: 100%;
@@ -1119,4 +1122,118 @@ footer {
 
 }
 
+/*BOOTSTRAP*/
 
+.tittle{
+    letter-spacing: 2px;
+    text-shadow: 5px 0px 5px rgb(116, 114, 114);
+    font-size: 15px;
+}
+.redes{
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    text-decoration: none;
+}
+.footer{
+    box-shadow: 5px -5px 30px white;
+    height: 100%;
+}
+.imagenInicio{
+    border-radius: 5px;}
+
+.imagenInicio{
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0px -4px 30px #979797;
+    border-radius: 5px;
+    animation-duration: 1s;
+    animation-name: imageninicio;
+    animation-fill-mode:forwards;
+    animation-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    
+    
+}
+@keyframes imageninicio {
+    from { 
+
+        opacity: 0; 
+      }
+    
+      to {
+
+        opacity: 1; 
+      }
+    
+}
+.tittle-sustentable{
+    letter-spacing: 5px;
+    text-shadow: 5px 0px 5px rgb(116, 114, 114);
+    font-size: 32px;
+
+}
+
+
+.img__sustentable{
+   box-shadow: 0px -4px 10px rgb(116, 114, 114);
+    transition: box-shadow 2s, transform 2.5s;
+    
+    
+}
+.img__sustentable:hover{
+    box-shadow:1px 0px 35px rgb(116, 114, 114);
+    transform: scale(1.05);
+
+
+}
+/* SECCIONES-TEXTO*/
+.ParrafoDescriptivo__p {
+    margin-top: 25px;
+    padding: 16px 0;
+    color: rgb(252, 252, 252);
+    height: 1.5;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: normal;
+    text-shadow: 1px 1px 25px rgb(206, 206, 255);
+    text-align: center;
+  
+    
+}
+
+/*VOLVER*/
+.volver__a__button{
+font-size:16px;
+color:rgb(0, 0, 0);
+margin: 50px 0px;
+padding: 2px 2px 2px 2px;
+background-color:rgb(80, 80, 80);
+box-shadow: 1px 1px 10px rgb(255, 255, 255);
+border-radius: 50px;
+font-weight: bold;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+transition: background-color 2s, border-color 2s, box-shadow 2s;
+}
+.volver__a__button:hover{
+    background-color: #BC3908;
+    border-color: #F6AA1C;
+    box-shadow:1px 1px 25px rgb(255, 255, 255); 
+}
+.textEstudio{
+    text-align: justify;
+    
+}
+.backgroundEstudio{
+    background-image: url(../assets/Proyecto/proyecto-1-posada/posada\ 2.jpg);
+}
+.backgroundDiv{
+    
+        grid-area: 2/1/6/4;
+        align-self: flex-start;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 2;
+        background-color: rgba(128, 128, 128, 0.33);
+        border-radius: 50px;
+        padding: 15px;
+}

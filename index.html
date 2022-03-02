@@ -6,88 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Britos&Denipoti Arquitectos</title>
     <link rel="shortcut icon" href="../assets/Inicio/logo personalizado.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
 <body>
     <header>
-        <nav class="navBar">
-<!--LOGO EN BARRA DE NAVEGACION-->
-            <div class="logo">
-                <img src="./assets/Inicio/logo personalizado.jpg" alt="compas-arquitecto" id="encabezado"
-                        width="50px">
-            </div>
-<!--BARRA DE NAVEGACION-->
-            <div class="navBarFlex">
-                <ul class="navBarFlex__ul">
-                    <li class="navBarFlex__ul__li"><a href="index.html" id="navBarFLex__ul__li__a">INICIO</a></li>
-                    <li class="navBarFlex__ul__li"><a href="./pages/estudio.html" id="navBarFLex__ul__li__a">ESTUDIO</a></li>
-                    <li class="navBarFlex__ul__li"><a href="./pages/Proyecto.html" id="navBarFLex__ul__li__a">PROYECTOS</a></li>
-                    <li class="navBarFlex__ul__li"><a href="./pages/estilo.html" id="navBarFLex__ul__li__a">ESTILOS</a></li>
-                    <li class="navBarFlex__ul__li"><a href="./pages/contacto.html" id="navBarFLex__ul__li__a">CONTACTO</a></li>
-                </ul>  
-            </div>
-<!--TITTLE RESPONSIVE-->
-            <div class="tittleResponsive">
-                <h1>Estudio Britos&Denipoti Arquitectos </h1>
-            </div>
-<!--BARRA DE NAVEGACION HAMBURGUESA-->
-            <div class="responsive">
-                <img src="./assets/inicio/hamburguesa.png" alt="menu hamburguesa" >
-            </div>
-<!--LINK PARA REDES SOCIALES-BARRA DE NAVEGACION-->
-            <div class="navBarFlex__Redes">
-                <ul class="navBarFlex__Redes__ul">
-                    <li class="navBarFlex__Redes__ul__li"><a href="https://www.facebook.com/" target="_blank"
-                            rel="noopener noreferrer"><img src="./assets/Iconos Redes/descarga (1).png" alt="icono facebook"
-                                width="50px"></a></li>
-                   <!-- <li class="navBarFlex__Redes__ul__li"><a href="https://www.instagram.com/" target="_blank"
-                            rel="noopener noreferrer"><img src="./assets/Iconos Redes/instagram.png"
-                                alt="icono instagram" width="25px%"></a></li>-->
-                    <li class="navBarFlex__Redes__ul__li"><a href="https://www.whatsapp.com/" target="_blank"rel="noopener noreferrer">
-                        <img src="./assets/Iconos Redes/descarga.png" alt="icono whatsapp" width="50px"></a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark container-fluid p-0">
+            <div class="container-fluid col-sm-12 p-0">
+                <a class="navbar-brand tittle fw-bolder text-secondary m-0 " href="./index.html">Britos&Denipoti
+                    Arquitectos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bolder p-3" href="./index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bolder p-3" href="./pages/estudio.html">ESTUDIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bolder p-3" href="./pages/Proyecto.html">PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bolder p-3" href="./pages/estilo.html">ESTILOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bolder p-3" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+
+                </div>
             </div>
         </nav>
+
     </header>
 
     <main>
-        <section>
-            <div class="imagenInicio">
-                <img src="./assets/Inicio/posada.jpg" alt="Vivienda con diseño moderno" >
+        <section class="conteiner-fluid row m-0 p-0">
+
+            <img src="./assets/Inicio/posada.jpg" alt="Vivienda con diseño moderno" class="imagenInicio col-12 p-0"
+                id="encabezado">
+
+        </section>
+
+        <section class="conteiner-fluid row pt-3 m-0 ">
+
+            <div class="col-12 text-center p-3 text-secondary  m-0 p-0">
+                <h3 class="tittle-sustentable fw-bolder">Estilo de Construcción Sustentable</h3>
+            </div>
+
+            <div class="col-sm-4 col-12 text-center pt-3">
+                <a href="./pages/estilo.html"><img src="./assets/sustentable/sustentable 2.jpg"
+                        alt="arquitectura sustentable" width="100%" height="100%"
+                        class="rounded-circle img__sustentable p-0"></a>
+            </div>
+
+            <div class="col-sm-4 col-12 text-center pt-3">
+                <a href=" ./pages/estilo.html"><img src="./assets/sustentable/sustentable(1).jpg"
+                        alt="arquitectura sustentable" width="100%" height="100%"
+                        class="rounded-circle img__sustentable p-0"></a>
+            </div>
+
+            <div class="col-sm-4 col-12 text-center pt-3">
+                <a href="./pages/estilo.html"><img src="./assets/sustentable/sustentable 3.jpg"
+                        alt="arquitectura sustentable" width="100%" height="100%"
+                        class="rounded-circle img__sustentable p-0"></a>
             </div>
         </section>
 
-        <section class="imagenSustentable">
+        <section class="conteiner-fluid row p-0 m-0">
 
-            <div class="home__subtittle">
-                <h3>Estilo de Construcción Sustentable</h3>
-            </div>
-
-            <div class="imagenSustentable__div--1">
-                <a href="./pages/estilo.html" class="imagenSustentable__div__a"><img
-                        src="./assets/sustentable/sustentable 2.jpg" alt="arquitectura sustentable"
-                        class="imagenSustentable__div__a__img" "></a>
-            </div>
-
-            <div class="imagenSustentable__div--2">
-                <a href="./pages/estilo.html" class="imagenSustentable__div__a"><img
-                        src="./assets/sustentable/sustentable(1).jpg" alt="arquitectura sustentable"
-                        class="imagenSustentable__div__a__img"></a>
-            </div>
-
-            <div class="imagenSustentable__div--3">
-                <a href="./pages/estilo.html" class="imagenSustentable__div__a"><img
-                        src="./assets/sustentable/sustentable 3.jpg" alt="arquitectura sustentable"
-                        class="imagenSustentable__div__a__img"></a>
-            </div>
-        </section>
-
-        <section>
-
-            <div class="ParrafoDescriptivo">
-                <p class="ParrafoDescriptivo__p"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, rem
+            <div class="col-12 text-center p-0 ms-0 row">
+                <p class="col-12 ParrafoDescriptivo__p"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, rem
                     nam qui delectus ut dolorum
                     alias
                     commodi minima quidem quos similique, sint incidunt neque! Saepe laboriosam iusto dolore accusamus
@@ -95,42 +93,36 @@
                 </p>
             </div>
 
-            <div class="volver">
+            <div class="col-12 text-center p-0">
                 <a href="#encabezado"><button class="volver__a__button">Volver</button></a>
             </div>
 
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer conteiner-fluid row bg-dark align-items-center p-0 m-0">
 
-        <div class="logo">
-            <img src="./assets/Inicio/logo personalizado.jpg" alt="compas-arquitecto" width="50px">
+        <div class="col-sm-6 col-12 p-0">
+            <p class="text-center m-0 tittle fw-bolder text-secondary ">Britos & Denipoti
+                Arquitectos</p>
         </div>
 
-        <div>
-            <p class="footerCopyright__p">2022 Copyright Todos los derechos reservados</p>
-        </div>
-        <div>
-            <p class="footerName__p">Britos&Denipoti Arquitectos</p>
-        </div>
+        <div class="col-sm-6 row">
+              
+                    <a class="text-white fw-bolder p-3 redes col-sm-4 col-4 text-decoration-none" href="https://www.facebook.com/">Facebook</a>
 
-        <!--a modo de ejemplo, completar con direccion real-->
+                    <a class="nav-link text-white fw-bolder p-3 redes col-sm-4 col-4 text-decoration-none" href="https://www.instagram.com/">Instagram</a>
 
-        <div class="navBarFlex__Redes">
-            <ul class="navBarFlex__Redes__ul">
-                <li class="navBarFlex__Redes__ul__li"><a href="https://www.facebook.com/" target="_blank"
-                        rel="noopener noreferrer"><img src="./assets/Iconos Redes/descarga (1).png" alt="icono facebook"
-                            width="50px"></a></li>
-                <!--<li class="navBarFlex__Redes__ul__li"><a href="https://www.instagram.com/" target="_blank"
-                        rel="noopener noreferrer"><img src="./assets/Iconos Redes/instagram.png" alt="icono instagram"
-                            width="25px%"></a></li>-->
-                <li class="navBarFlex__Redes__ul__li"><a href="https://www.whatsapp.com/" target="_blank"
-                        rel="noopener noreferrer"><img src="./assets/Iconos Redes/descarga.png" alt="icono whatsapp"
-                            width="50px"></a></li>
-            </ul>
+                    <a class="text-white fw-bolder p-3 redes col-sm-4 col-4 text-decoration-none" href="https://www.whatsapp.com/">Whatsapp</a>
         </div>
     </footer>
+    <!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
