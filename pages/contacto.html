@@ -25,7 +25,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav me-3">
+                        <ul class="navbar-nav me-3 text-center">
                             <li class="nav-item navItems__shadow">
                                 <a class="nav-link text-white fw-bolder p-3 navbar__a" href="../index.html">INICIO</a>
                             </li>
@@ -59,15 +59,25 @@
         </section>
 
        <!--FORMULARIO BOOTSTRAP--> 
-        <section class="container-fluid row m-0 p-0">
-    
+        <section >
+    <form class="container-fluid row m-0 p-0">
         <div class="col-12 col-md-6 ms-0">
-          <input type="text" class="form-control m-3 ms-0" placeholder="Nombre" aria-label="First name">
+            <label for="name">Nombre</label>
+          <input type="text" class="form-control m-3 ms-0" placeholder="Nombre" name="name">
         </div>
 
         <div class="col-12 col-md-6 ms-0">
-          <input type="text" class="form-control m-3 ms-0" placeholder="Apellido" aria-label="Last name">
+            <label for="lastname">Apellido</label>
+          <input type="text" class="form-control m-3 ms-0" placeholder="Apellido"  name="lastname">
         </div>
+        <div class="col-12 col-md-6 ms-0">
+            <label for="cel">Telefono</label>
+            <input type="number" class="form-control m-3 ms-0" placeholder="Numero Telefonico"  name="telefono">
+          </div>
+          <div class="col-12 col-md-6 ms-0">
+            <label for="email">Correo electronico</label>
+            <input type="email" class="form-control m-3 ms-0" placeholder="example@example.com"  name="email">
+          </div>
       
 
        <div class="col-12 form-floating my-5 ms-0">
@@ -97,7 +107,7 @@
         <button class="btn btn-primary" type="submit">Enviar</button>
         <input type="reset" value="Limpiar" class="btn btn-primary">
       </div>
-
+    </form>
     </section>
       
 </main>
