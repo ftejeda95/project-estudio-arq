@@ -60,44 +60,54 @@
 
        <!--FORMULARIO BOOTSTRAP--> 
         <section class="container-fluid row m-0 p-0">
-    
-        <div class="col-12 col-md-6 ms-0">
-          <input type="text" class="form-control m-3 ms-0" placeholder="Nombre" aria-label="First name">
-        </div>
-
-        <div class="col-12 col-md-6 ms-0">
-          <input type="text" class="form-control m-3 ms-0" placeholder="Apellido" aria-label="Last name">
-        </div>
-      
-
-       <div class="col-12 form-floating my-5 ms-0">
-        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-          <option selected>Click para abrir menu</option>
-          <option value="1">6 meses</option>
-          <option value="2">1 año</option>
-          <option value="3">1.5 años</option>
-          
-        </select>
-        <label for="floatingSelect">Seleccione plazo estimado de finalizacion de proyecto </label>
-      </div>
-
-      <div class=" col-12 col-md-12 form-check my-3 ms-0">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-        <label class="form-check-label" for="flexCheckIndeterminate">
-            Desea recibir informarcion adicional a su proyecto?
-        </label>
-      </div>
-
-      <div class="col-12 col-md-12 form-floating my-3 ms-0">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-        <label for="floatingTextarea2">Comentario</label>
-      </div>
-
-      <div class="col-12 col-md-12 text-center p-3 my-5">
-        <button class="btn btn-primary" type="submit">Enviar</button>
-        <input type="reset" value="Limpiar" class="btn btn-primary">
-      </div>
-
+            <form class="container-fluid row m-0 p-0">
+                <div class="col-12 col-md-6 ms-0">
+                    <label for="name">Nombre</label>
+                  <input type="text" class="form-control m-3 ms-0" placeholder="Nombre" name="name">
+                </div>
+        
+                <div class="col-12 col-md-6 ms-0">
+                    <label for="lastname">Apellido</label>
+                  <input type="text" class="form-control m-3 ms-0" placeholder="Apellido"  name="lastname">
+                </div>
+                <div class="col-12 col-md-6 ms-0">
+                    <label for="cel">Telefono</label>
+                    <input type="number" class="form-control m-3 ms-0" placeholder="Numero Telefonico"  name="telefono">
+                  </div>
+                  <div class="col-12 col-md-6 ms-0">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" class="form-control m-3 ms-0" placeholder="example@example.com"  name="email">
+                  </div>
+              
+        
+               <div class="col-12 form-floating my-5 ms-0">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Click para abrir menu</option>
+                  <option value="1">6 meses</option>
+                  <option value="2">1 año</option>
+                  <option value="3">1.5 años</option>
+                  
+                </select>
+                <label for="floatingSelect">Seleccione plazo estimado de finalizacion de proyecto </label>
+              </div>
+        
+              <div class=" col-12 col-md-12 form-check my-3 ms-0">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                    Desea recibir informarcion adicional a su proyecto?
+                </label>
+              </div>
+        
+              <div class="col-12 col-md-12 form-floating my-3 ms-0">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comentario</label>
+              </div>
+        
+              <div class="col-12 col-md-12 text-center p-3 my-5">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+                <input type="reset" value="Limpiar" class="btn btn-primary">
+              </div>
+            </form>
     </section>
       
 </main>
