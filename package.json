@@ -1,0 +1,20 @@
+{
+  "name": "estudio-arquitecto-tejeda-facundo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass style.scss style.css.min.css -w --no-source-map compressed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ftejeda95/project-estudio-arq.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ftejeda95/project-estudio-arq/issues"
+  },
+  "homepage": "https://github.com/ftejeda95/project-estudio-arq#readme"
+}

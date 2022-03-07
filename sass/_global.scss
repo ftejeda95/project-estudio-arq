@@ -1,0 +1,42 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    }
+body{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        background-color: black;
+        max-width: 100%;
+    
+    
+    }
+.secondTittle{
+        font-family: 'Mochiy Pop P One', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Teko', sans-serif;
+        text-shadow: 1px 1px 10px #BC3908;
+        font-size: 32px;
+        letter-spacing: 5px;
+    }
+ body main .volver__a__button{
+    font-size:16px;
+    color:rgb(0, 0, 0);
+    margin: 50px 0px;
+    padding: 2px 2px 2px 2px;
+    background-color:rgb(80, 80, 80);
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+    border-radius: 50px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: background-color 2s, border-color 2s, box-shadow 2s;
+        &:hover{
+            background-color: #BC3908;
+            border-color: #F6AA1C;
+            box-shadow:1px 1px 25px rgb(255, 255, 255); 
+        a{
+        text-decoration: none;
+        color:rgb(0, 0, 0);
+        
+        }}}
+
+ 

@@ -1,0 +1,29 @@
+
+body header .backgroundNav{
+    background-image: url(../assets/Inicio/fondo-marmol.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 15px 25px black;
+}
+header nav div a.tittle{
+    letter-spacing: 2px;
+    text-shadow: 5px 0px 5px rgb(116, 114, 114);
+    font-size: 18px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    color: black;
+}  
+header nav div div ul li.navItems__shadow{
+                text-shadow:5px 5px 5px rgb(0, 0, 0);
+                .navbar__a{
+                    transition: all 1.5s;
+                    &:hover{
+                        text-decoration:underline;
+                        text-shadow: 0px 1px 7px#deb6e8;
+                        
+                    }}}
+
+
