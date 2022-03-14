@@ -1,10 +1,10 @@
 
 body header .backgroundNav{
-    background-image: url(../assets/Inicio/fondo-marmol.jpg);
-    background-position:top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 0px 15px 25px black;
+    background-image: linear-gradient(to right, rgb(31, 31, 31)0.1,black);
+    border-bottom: solid;
+    box-shadow:0px 20px 20px rgb(0, 0, 0);
+    border-bottom-color: #F6AA1C;
+    z-index: 1;
 }
 header nav div a.tittle{
     letter-spacing: 2px;
@@ -22,8 +22,12 @@ header nav div div ul li.navItems__shadow{
                     transition: all 1.5s;
                     &:hover{
                         text-decoration:underline;
-                        text-shadow: 0px 1px 7px#deb6e8;
+                        text-shadow: 0px 1px 7px#F6AA1C;
                         
                     }}}
 
-
+ @media (min-width:320px) and (max-width:768px) {
+                        header nav div .tittle{
+                            text-align: center;
+                        }}
+                    

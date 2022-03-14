@@ -1,9 +1,10 @@
 /*INDEX*/
-
+/*FORMATO CARRUCEL*/
 body main div .imagenInicio{
     width: 100%;
+    height: 100%;
     margin-top: 20px;
-    box-shadow: 0px -4px 30px #979797;
+    box-shadow: $box-shadowTop;
     border-radius: 5px;
     animation-duration: 1s;
     animation-name: imageninicio;
@@ -23,13 +24,15 @@ body main div .imagenInicio{
         
     }
 }
+
+/*FORMATO SECCION SUSTENTABLE*/
 body main .sectionSustentable{
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin: 0% 0%;
     padding: 0% ;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     gap: 30px;
 
@@ -42,81 +45,76 @@ body main .sectionSustentable{
         text-align: center;
         grid-area: 1/1/2/4;
         color: rgb(146, 139, 139);
-        .secondTittle{
-            font-family: 'Mochiy Pop P One', sans-serif;
-            font-family: 'Montserrat', sans-serif;
-            font-family: 'Teko', sans-serif;
-            text-shadow: 1px 1px 10px #BC3908;
-            font-size: 32px;
-            letter-spacing: 5px;
-        }
+
     }
     
     .imgSustentable__grid__2 {
         grid-area:2/1/2/2;
-        width: 100%;
-        height: 100%;
-        justify-self: center;
-        .img__sustentable{
-            box-shadow: 0px -4px 10px rgb(116, 114, 114);
-            transition: box-shadow 2s, transform 2.5s;
-            width: 100%;
-            height: 100%;
-            &:hover{
-                box-shadow:1px 0px 35px rgb(116, 114, 114);
-                transform: scale(1.05);
-    }}}}
-body main .sectionSustentable .imgSustentable__grid__3{
-        width: 100%;
-        height: 100%;
-        justify-self: center;
-
-        .img__sustentable{
-        box-shadow: 0px -4px 10px rgb(116, 114, 114);
-        transition: box-shadow 2s, transform 2.5s;
-        width: 100%;
-        height: 100%;
+        @extend .imgMain;
+        box-shadow: $box-shadowTop;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: box-shadow 2s;
         &:hover{
-            box-shadow:1px 0px 35px rgb(116, 114, 114);
+            box-shadow:$box-shadowTransition;
+        }    
+        
+        .img__sustentable{
+            @extend .imgMain;
+            transition: transform 2.5s;
+            align-self: center;
+            justify-self: center;
+            
+            &:hover{
+                box-shadow:$box-shadowTransition;
+                transform: scale(1.05);
+    }}}
+     .imgSustentable__grid__3{
+        grid-area:2/2/2/3;
+        @extend .imgMain;
+        box-shadow: $box-shadowTop;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: box-shadow 2s;
+        &:hover{
+            box-shadow:$box-shadowTransition;
+        }
+        .img__sustentable{
+        @extend .imgMain;
+        transition: transform 2.5s;
+
+        &:hover{
             transform: scale(1.05);
     }}}
-
-body main .sectionSustentable .imgSustentable__grid__4 {
+    .imgSustentable__grid__4 {
         grid-area: 2/3/2/4;
-        width: 100%;
-        height: 100%;
-        justify-self: center;
+        @extend .imgMain;
+        box-shadow: $box-shadowTop;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: box-shadow 2s;
+        &:hover{
+            box-shadow:$box-shadowTransition;
+        }
+
         .img__sustentable{
-            box-shadow: 0px -4px 10px rgb(116, 114, 114);
-            transition: box-shadow 2s, transform 2.5s;
-            width: 100%;
-            height: 100%;
+            transition:transform 2.5s;
+            @extend .imgMain;
             &:hover{
-                box-shadow:1px 0px 35px rgb(116, 114, 114);
+                box-shadow:$box-shadowTransition;
                 transform: scale(1.05);
-    }}}
-
-body main section div .ParrafoDescriptivo__p {
-    margin-top: 0px;
-    padding: 16px 0;
-    color: rgb(252, 252, 252);
-    height: 1.5;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: normal;
-    text-shadow: 1px 1px 25px rgb(206, 206, 255);
-    text-align: center;
-  
+    }}}}
     
-}
 
-body main section div .volver__a__button{
-font-size:16px;
+/*FORMATO BUTTON*/
+
+body main div .volver__a__button{
+font-size:1rem;
 color:rgb(0, 0, 0);
 margin: 50px 0px;
-padding: 2px 2px 2px 2px;
+padding: 2px;
 background-color:rgb(80, 80, 80);
-box-shadow: 1px 1px 10px rgb(255, 255, 255);
+box-shadow: $box-shadowTop;
 border-radius: 50px;
 font-weight: bold;
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -124,13 +122,16 @@ transition: all 1s;
     &:hover{
         background-color: #BC3908;
         border-color: #F6AA1C;
-        box-shadow:1px 1px 15px rgb(255, 255, 255); 
+        box-shadow:$box-shadowTransition; 
     a{
     text-decoration: none;
     color:rgb(0, 0, 0);
     
     }}}
-@media (min-width:320px) and (max-width:600px) {
+
+/*FORMATO RESPONSIVE*/
+
+@media (min-width:320px) and (max-width:768px) {
 
 
 
@@ -142,83 +143,80 @@ transition: all 1s;
         }
         .imgSustentable__grid__2{
         grid-area: 2/1/2/4;
-        width: 310px;
-        height: 300px;
+
     }
         .imgSustentable__grid__3{
         grid-area: 3/1/3/4;
-        width: 310px;
-        height:  300px;
+
     }
         .imgSustentable__grid__4{
         grid-area: 4/1/4/5;
-        width: 310px;
-        height: 300px;
+
     }
     }}
 
+@media (min-width:769px) and (max-width:1024px) {
+
+    body main .sectionSustentable{
+
+        grid-template-columns: repeat(6,1fr);
+        gap: 0px;
+            .imgSustentable__grid__1{
+                grid-area: 1/1/1/7;
+
+            }
+            .imgSustentable__grid__2{
+            grid-area: 2/1/2/3;
+            width: 250px;
+            height: 260px;
+        }
+            .imgSustentable__grid__3{
+            grid-area: 2/3/2/5;
+            width: 250px;
+            height: 260px;
+        }
+            .imgSustentable__grid__4{
+            grid-area: 2/5/2/7;
+            width: 250px;
+            height: 260px;
+        }
+        }}
     /*FORMATO ESTUDIO*/
+
 body main div .textEstudio{
     text-align: justify;
     
 }
 
 .backgroundEstudio{
-    background-image: url(../assets/Estudio/fondo.jpg);
+    background-image: url(https://res.cloudinary.com/facuindex/image/upload/v1647289845/est%20arquitecto/estudio/fondo_zyd2t7.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 body main .backgroundDiv{
     
         grid-area: 2/1/6/4;
         align-self: flex-start;
-        color: white;
+        color: rgb(36, 36, 36);
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
+        font-size: $fontParraf;
         text-align: justify;
         line-height: 2;
-        background-color: rgba(128, 128, 128, 0.33);
+        background-color: rgba(128, 128, 128, 0.576);
         border-radius: 50px;
         padding: 15px;
 
-        .secondTittle{
-            font-family: 'Mochiy Pop P One', sans-serif;
-            font-family: 'Montserrat', sans-serif;
-            font-family: 'Teko', sans-serif;
-            text-shadow: 1px 1px 10px #BC3908;
-            font-size: 32px;
-            letter-spacing: 5px;
         }
 
-}
 /*FORMATO PROYECTOS*/
-body main section .secondTittle{
-    font-family: 'Mochiy Pop P One', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Teko', sans-serif;
-    text-shadow: 1px 1px 10px #BC3908;
-    font-size: 32px;
-    letter-spacing: 5px;
-}
+
 body main section .img__animacion{
     border-radius: 10px;
-    transition: all 0.7s;
+    transition: all 1.5s;
 
     &:hover{
-    box-shadow:0px 0px 5px #F6AA1C;
+    box-shadow:0px 0px 20px #F6AA1C;
 
 }}
-/*FORMATO ESTILO*/
-body main section .ParrafoDescriptivo__p{  margin-top: 25px;
-    padding: 16px 0;
-    color: rgb(252, 252, 252);
-    height: 1.5;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: normal;
-    text-shadow: 1px 1px 25px rgb(206, 206, 255);
-    text-align: center;
-  
-    
-}
