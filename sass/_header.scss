@@ -1,11 +1,28 @@
 
-body header .backgroundNav{
-    background-image: linear-gradient(to right, rgb(31, 31, 31)0.1,black);
+body header {
+    .backgroundNav{
+    background-image: linear-gradient(to right, rgb(31, 31, 31) 10%,black);
     border-bottom: solid;
     box-shadow:0px 20px 20px rgb(0, 0, 0);
     border-bottom-color: #F6AA1C;
     z-index: 1;
-}
+    position: fixed;
+    top: 0;
+    width: 100%;
+ 
+    div .menu-btn{
+       
+        background-color: #74747465;
+        border-radius: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      
+    
+    
+    }
+
+
+}}
 header nav div a.tittle{
     letter-spacing: 2px;
     text-shadow: 5px 0px 5px rgb(116, 114, 114);
@@ -18,13 +35,12 @@ header nav div a.tittle{
 }  
 header nav div div ul li.navItems__shadow{
                 text-shadow:5px 5px 5px rgb(0, 0, 0);
-                .navbar__a{
                     transition: all 1.5s;
                     &:hover{
                         text-decoration:underline;
                         text-shadow: 0px 1px 7px#F6AA1C;
                         
-                    }}}
+                    }}
 
  @media (min-width:320px) and (max-width:768px) {
                         header nav div .tittle{

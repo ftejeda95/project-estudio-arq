@@ -1,9 +1,8 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     }
 body{
-        font-family: Arial, Helvetica, sans-serif;
         line-height: 1.5;
         background-color: black;
         max-width: 100%;
@@ -11,13 +10,7 @@ body{
     
     }
 
-    @mixin subtittle ($letter){
-        font-family: 'Mochiy Pop P One', sans-serif;
-        font-family: 'Montserrat', sans-serif;
-        font-family: 'Teko', sans-serif;
-        text-shadow: 1px 1px 10px #BC3908;
-        letter-spacing: $letter;
-    }
+
 .secondTittle{
     @include subtittle (7px)
         
@@ -27,51 +20,18 @@ body{
     width: 300px;
     height: 310px;
 }
+
+
 /*FORMATO ESTILO*/
 body main section .ParrafoDescriptivo__p{  
-    margin-top: 25px;
+    margin-top: 10px;
     padding: 16px 0;
     color: rgb(252, 252, 252);
     height: 1.5;
     font-style: italic;
     font-weight: normal;
     text-shadow:$box-shadowTop;
-    text-align: center;
+    text-align: justify;
   
     
 }
-/*MIXIN-MAP-MAP-GET-EARCH*/
-
-$fontSizeTittle: (
-    h1: 3rem,
-    h2: 2rem,
-    h3: 1.7rem,
-    h4: 1.2rem,
-    h5: 1rem,
-    h6: 0.7rem
-);
-$h3: map-get($fontSizeTittle,h3);
-$h2: map-get($fontSizeTittle,h2);
-
-@each $heading, $size in (h3:$h3, h2:$h2) {
-    #{$heading}{
-        font-size: $size;
-        text-transform: uppercase;
-    }
-
-}
-
- $redes:(
-    facebook:cyan,
-    whatsapp:green,
-    instagram:pink
- );
-
-@each $rrss,$color in $redes{
-    .rs--#{$rrss}{
-         text-shadow:0px 2px 2px $color;
-         color: white;
-         text-decoration: none;
-     }
-     
- }
