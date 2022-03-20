@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+body{
+        line-height: 1.5;
+        background-color: black;
+        max-width: 100%;
+    
+    
+    }
+
+
+.secondTittle{
+    @include subtittle (7px)
+        
+
+    }
+.imgMain{
+    width: 300px;
+    height: 310px;
+}
+
+
+/*FORMATO ESTILO*/
+body main section .ParrafoDescriptivo__p{  
+    margin-top: 10px;
+    padding: 16px 0;
+    color: rgb(252, 252, 252);
+    height: 1.5;
+    font-style: italic;
+    font-weight: normal;
+    text-shadow:$box-shadowTop;
+    text-align: justify;
+  
+    
+}

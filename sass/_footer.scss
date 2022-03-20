@@ -1,0 +1,42 @@
+.footer{
+    box-shadow: $box-shadowTop;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(31, 31, 31)0.1,black);
+    border-top: solid;
+    border-top-color: #F6AA1C;
+  
+        div .tittle{
+    letter-spacing: 2px;
+    text-shadow: 5px 0px 5px rgb(116, 114, 114);
+    font-size: 18px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    color: black;
+
+}  }
+
+ .footer div a {
+    
+    width: 40px;
+    
+     img{
+   
+   
+        transition: all 1.5s;
+        border-radius: 50px;    
+             &:hover{
+                text-decoration:underline;
+                box-shadow: 0px 0px 15px#f61c1c  
+    }}}
+
+    /*FORMATO RESPONSIVE*/
+@media (min-width:320px) and (max-width:768px) {
+.footer div .tittle{ 
+            text-align: center;
+                }
+                .footer div .copyright{
+                   text-align: center;
+                }}
