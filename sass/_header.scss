@@ -1,14 +1,15 @@
 
 body header {
     .backgroundNav{
-    background-image: linear-gradient(to right, rgb(31, 31, 31) 10%,black);
+        background-image: linear-gradient(to right,#a5a58d, rgb(255, 255, 255));
     border-bottom: solid;
-    box-shadow:0px 20px 20px rgb(0, 0, 0);
-    border-bottom-color: #F6AA1C;
+    box-shadow:0px 5px 30px rgb(0, 0, 0);
+    border-bottom-color: #f1faee;
     z-index: 1;
     position: fixed;
     top: 0;
     width: 100%;
+    
  
     div .menu-btn{
        
@@ -23,27 +24,39 @@ body header {
 
 
 }}
-header nav div a.tittle{
+header nav div .tittle{
     letter-spacing: 2px;
     text-shadow: 5px 0px 5px rgb(116, 114, 114);
-    font-size: 18px;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
     color: black;
 }  
-header nav div div ul li.navItems__shadow{
-                text-shadow:5px 5px 5px rgb(0, 0, 0);
-                    transition: all 1.5s;
+header nav div div ul .navItems__shadow{
+                    text-shadow:2px 2px 5px #ffe8d6;
+                    transition: all 2s;
+                    font-weight: bold;
+                   
+                    
+                    
+                    
                     &:hover{
                         text-decoration:underline;
-                        text-shadow: 0px 1px 7px#F6AA1C;
+                        text-shadow: 0px 1px 7px rgb(0, 0, 0);
                         
-                    }}
-
+                        
+                    }
+                    a{
+                        text-decoration: none;
+                    
+                    }
+                    }
+/*MEDIA QUERIES*/
  @media (min-width:320px) and (max-width:768px) {
-                        header nav div .tittle{
+
+                       body header nav div .tittle{
                             text-align: center;
+                            font-size: 14px;
+                            letter-spacing: 1px;
                         }}
                     
+

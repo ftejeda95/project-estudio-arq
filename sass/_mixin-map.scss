@@ -1,9 +1,10 @@
 @mixin subtittle ($letter){
-    font-family: 'Mochiy Pop P One', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Teko', sans-serif;
-    text-shadow: 1px 1px 10px #BC3908;
+    font-family: 'Quicksand', sans-serif;
+   /*s text-shadow: 1px 1px 0px #000000;*/
     letter-spacing: $letter;
+    font-weight: 600;
+    color:gray;
+    text-shadow: 1px 1px 2px black;
 }
 
 $fontSizeTittle: (
@@ -35,7 +36,7 @@ $h4: map-get($fontSizeTittle,h4);
 
 @each $rrss,$color in $redes{
     .rs--#{$rrss}{
-         box-shadow:0px 2px 2px $color;
+         box-shadow:0px 3px 15px $color;
 
      }
      
