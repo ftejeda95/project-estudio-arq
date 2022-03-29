@@ -1,6 +1,5 @@
 @mixin subtittle ($letter){
     font-family: 'Quicksand', sans-serif;
-   /*s text-shadow: 1px 1px 0px #000000;*/
     letter-spacing: $letter;
     font-weight: 600;
     color:gray;
